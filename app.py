@@ -5,7 +5,7 @@ import time
 def fire_requests():
     r = rq.get('https://stocksly.onrender.com/stocks/get_available_stocks/')
     stocks = r.content 
-    time.sleep(10)
+    time.sleep(30)
     
 st.header("started trigger")
 st.write("this app powers https://stocksly.onrender.com/")
