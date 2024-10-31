@@ -7,6 +7,7 @@ def fire_requests():
     stocks = r.content 
     time.sleep(10)
     
-st.warning("started trigger")
+st.header("started trigger")
+st.write("this app powers https://stocksly.onrender.com/")
 while True:
     fire_requests()
